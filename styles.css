@@ -387,8 +387,8 @@ a {
 
 .adaptation-row {
   display: grid;
-  grid-template-columns: 1.25fr 1.55fr 0.75fr 0.8fr 1fr;
-  min-height: 58px;
+  grid-template-columns: 1.15fr 1.45fr 0.7fr 1.2fr;
+  min-height: 40px;
   border-top: 1px solid var(--line);
 }
 
@@ -399,10 +399,12 @@ a {
 .adaptation-row span {
   display: flex;
   align-items: center;
-  padding: 14px 16px;
+  padding: 8px 12px;
   border-left: 1px solid var(--line);
   color: #2b3038;
+  font-size: 14px;
   font-weight: 750;
+  line-height: 1.35;
 }
 
 .adaptation-row span:first-child {
@@ -412,7 +414,7 @@ a {
 }
 
 .adaptation-row.table-head {
-  min-height: 48px;
+  min-height: 38px;
   background: var(--ink);
 }
 
@@ -480,8 +482,8 @@ a {
 
   .adaptation-row {
     grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 18px;
+    gap: 5px;
+    padding: 12px 14px;
     border-top: 2px solid var(--ink);
   }
 
@@ -494,6 +496,7 @@ a {
     gap: 20px;
     padding: 0;
     border-left: 0;
+    font-size: 14px;
   }
 
   .adaptation-row span::before {
@@ -506,7 +509,7 @@ a {
 
   .adaptation-row span:first-child {
     display: block;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .adaptation-row span:first-child::before {

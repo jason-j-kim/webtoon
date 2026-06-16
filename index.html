@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 한국 웹툰</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="오늘의 한국 웹툰 홈">
+        <span class="brand-mark">컷</span>
+        <span>오늘의 한국 웹툰</span>
+      </a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#featured">추천작</a>
+        <a href="#genres">장르</a>
+        <a href="#culture">특징</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="한국 웹툰 소개">
+        <img src="assets/webtoon-hero.png" alt="서울 밤거리와 스마트폰 웹툰 패널을 그린 일러스트" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">K-WEBTOON STARTER</p>
+          <h1>세로로 펼쳐지는 <br />한국 웹툰의 세계</h1>
+          <p>
+            출퇴근길 5분부터 밤새 정주행까지. 로맨스, 스릴러, 판타지, 일상 코미디를
+            한눈에 훑고 취향에 맞는 첫 작품을 찾아보세요.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#featured">추천작 보기</a>
+            <a class="button secondary" href="#culture">웹툰 특징</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro">
+        <div>
+          <span class="metric">10분</span>
+          <p>짧게 읽기 좋은 모바일 네이티브 호흡</p>
+        </div>
+        <div>
+          <span class="metric">세로 스크롤</span>
+          <p>컷과 컷 사이를 손끝으로 넘기는 연출</p>
+        </div>
+        <div>
+          <span class="metric">매주 연재</span>
+          <p>요일마다 돌아오는 새로운 에피소드</p>
+        </div>
+      </section>
+
+      <section id="featured" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">CURATED PICKS</p>
+          <h2>처음 읽기 좋은 추천 웹툰</h2>
+        </div>
+
+        <div class="filters" id="genres" aria-label="장르 필터">
+          <button class="filter active" type="button" data-filter="all">전체</button>
+          <button class="filter" type="button" data-filter="romance">로맨스</button>
+          <button class="filter" type="button" data-filter="thriller">스릴러</button>
+          <button class="filter" type="button" data-filter="fantasy">판타지</button>
+          <button class="filter" type="button" data-filter="slice">일상</button>
+        </div>
+
+        <div class="webtoon-grid" aria-live="polite">
+          <article class="webtoon-card" data-genre="romance">
+            <div class="cover cover-romance">
+              <span>로맨스</span>
+            </div>
+            <div class="card-body">
+              <p class="tag">설렘 / 캠퍼스</p>
+              <h3>너에게 닿는 월요일</h3>
+              <p>동아리 방에서 시작된 오해가 매주 월요일 새로운 고백으로 이어지는 청춘 로맨스.</p>
+            </div>
+          </article>
+
+          <article class="webtoon-card" data-genre="thriller">
+            <div class="cover cover-thriller">
+              <span>스릴러</span>
+            </div>
+            <div class="card-body">
+              <p class="tag">미스터리 / 추적</p>
+              <h3>새벽 3시의 알림</h3>
+              <p>사라진 친구의 계정에서 매일 같은 시간 도착하는 메시지를 따라가는 도시 스릴러.</p>
+            </div>
+          </article>
+
+          <article class="webtoon-card" data-genre="fantasy">
+            <div class="cover cover-fantasy">
+              <span>판타지</span>
+            </div>
+            <div class="card-body">
+              <p class="tag">성장 / 액션</p>
+              <h3>문 너머의 사서</h3>
+              <p>고서 속 세계를 수리하는 신입 사서가 잃어버린 결말을 되찾는 모험 판타지.</p>
+            </div>
+          </article>
+
+          <article class="webtoon-card" data-genre="slice">
+            <div class="cover cover-slice">
+              <span>일상</span>
+            </div>
+            <div class="card-body">
+              <p class="tag">힐링 / 음식</p>
+              <h3>옥탑방 저녁식탁</h3>
+              <p>하루의 끝에 모인 이웃들이 한 끼를 나누며 조금씩 가까워지는 따뜻한 생활극.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="culture" class="culture">
+        <div class="section-heading">
+          <p class="eyebrow">WHY K-WEBTOON</p>
+          <h2>한국 웹툰이 특별한 이유</h2>
+        </div>
+        <div class="feature-list">
+          <article>
+            <span class="icon">01</span>
+            <h3>모바일에 맞춘 연출</h3>
+            <p>긴 세로 화면을 활용해 장면 전환, 침묵, 반전을 스크롤 리듬으로 설계합니다.</p>
+          </article>
+          <article>
+            <span class="icon">02</span>
+            <h3>댓글과 함께 커지는 재미</h3>
+            <p>독자 반응이 빠르게 쌓이며 다음 화를 기다리는 경험 자체가 하나의 문화가 됩니다.</p>
+          </article>
+          <article>
+            <span class="icon">03</span>
+            <h3>다양한 2차 확장</h3>
+            <p>드라마, 영화, 게임으로 이어지기 좋은 캐릭터와 세계관을 갖춘 작품이 많습니다.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>한국 웹툰 입문자를 위한 소개 페이지</p>
+      <a href="#top">맨 위로</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

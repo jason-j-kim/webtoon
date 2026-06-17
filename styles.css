@@ -413,8 +413,8 @@ a {
   gap: 14px;
 }
 
-.insight-grid article {
-  min-height: 270px;
+.insight-card {
+  min-height: 230px;
   padding: 20px;
   border: 2px solid var(--ink);
   border-radius: 8px;
@@ -422,10 +422,51 @@ a {
   box-shadow: 6px 6px 0 rgba(21, 21, 21, 0.12);
 }
 
+.insight-card summary {
+  display: block;
+  cursor: pointer;
+  list-style: none;
+}
+
+.insight-card summary::-webkit-details-marker {
+  display: none;
+}
+
 .insight-grid h3 {
   margin: 14px 0 8px;
   font-size: 21px;
   line-height: 1.2;
+}
+
+.insight-card summary p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.insight-card summary::after {
+  content: "자세히 보기";
+  display: inline-flex;
+  margin-top: 16px;
+  padding: 6px 10px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: var(--yellow);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.insight-card[open] summary::after {
+  content: "접기";
+  background: #fff;
+}
+
+.insight-detail {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
 }
 
 .insight-grid p,
@@ -565,7 +606,7 @@ a {
     padding: 30px;
   }
 
-  .insight-grid article {
+  .insight-card {
     min-height: auto;
   }
 

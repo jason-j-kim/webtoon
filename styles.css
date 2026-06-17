@@ -531,6 +531,19 @@ a {
   font-weight: 900;
 }
 
+.adaptation-group {
+  border-top: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.adaptation-group span {
+  display: block;
+  padding: 10px 12px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .icon {
   display: grid;
   place-items: center;
@@ -618,6 +631,14 @@ a {
 
   .adaptation-row.table-head {
     display: none;
+  }
+
+  .adaptation-group {
+    border-top: 2px solid var(--ink);
+  }
+
+  .adaptation-group span {
+    padding: 12px 14px;
   }
 
   .adaptation-row span {
